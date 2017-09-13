@@ -15,8 +15,8 @@ use Data::Dumper;
 use Math::Round;
 use Cwd 'abs_path';
 
-my $VERSION = '2.0' ;
-my $lastmodif = '2017-05-30' ;
+my $VERSION = '1.0' ;
+my $lastmodif = '2017-09-13' ;
 
 my $input_file= '';
 my $output = '';
@@ -194,7 +194,7 @@ my $prog = basename($0) ;
 print STDERR <<EOF ;
 ### $prog $VERSION ###
 #
-# AUTHOR:     Sandy Contreras & Sebastien THEIL
+# AUTHOR:     Sebastien THEIL
 # VERSION:    $VERSION
 # LAST MODIF: $lastmodif
 # PURPOSE:    This script is used to parse csv file containing tax_id field and creates Krona charts.
