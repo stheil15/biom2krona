@@ -149,10 +149,7 @@ sub XMLPrinter {
 		my $newHash;
 		$writer->startTag('node', name => "$c");
 		$writer->startTag('magnitude');
-		print $c . "\n";
-	# 	print $tree->{$k}->{$c};
 		for(my $i=0;$i<=$#{$self->{_sample_list}};$i++){
-			print $self->{_sample_list}->[$i] . "\t" . $tree->{$c}->{$self->{_sample_list}->[$i]} . "\n";
 			$writer->dataElement(val => nearest(0.00001, $tree->{$c}->{$self->{_sample_list}->[$i]}));
 		}
 		$writer->endTag('magnitude');
